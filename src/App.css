@@ -36,3 +36,10 @@
     transform: rotate(360deg);
   }
 }
+
+.container-app {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #ede0d4;
+}

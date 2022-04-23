@@ -1,0 +1,14 @@
+.navbar {
+  position: fixed;
+  width: 100%;
+}
+
+.navbar-brand,
+.nav-item {
+  text-align: center;
+  margin: auto;
+}
+
+.btn-logout {
+  float: right;
+}

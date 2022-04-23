@@ -1,0 +1,23 @@
+.my-info-form {
+  margin: auto;
+  width: 70%;
+  height: 70%;
+  border: 3px solid gold;
+  padding: 10px;
+  margin-top: 30px;
+}
+
+.my-form-info-row {
+  display: block;
+  margin: auto !important;
+  text-align: center;
+  color: gold;
+}
+
+.info {
+  padding: 20px;
+}
+
+.my-form-row {
+  background-color: black;
+}
