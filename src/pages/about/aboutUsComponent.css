@@ -1,0 +1,14 @@
+.aboutCardsContainer {
+  display: flex;
+}
+
+.aboutCard {
+  height: 500px;
+  width: 260px;
+  margin: 0 auto;
+}
+
+.card-img-top-about {
+  height: 200px;
+  width: 200px;
+}

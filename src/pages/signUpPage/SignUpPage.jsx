@@ -51,12 +51,12 @@ const SignUpPage = () => {
   };
 
   return (
-    <form onSubmit={handleSignUp}>
+    <form className="signUpForm" onSubmit={handleSignUp}>
       <div className="form-group row form-row">
         <label htmlFor="inputEmail3" className="col-sm-1 col-form-label">
           Name:
         </label>
-        <div className="col-sm-3">
+        <div className="col-sm-5">
           <input
             type="text"
             className="form-control"
@@ -72,7 +72,7 @@ const SignUpPage = () => {
         <label htmlFor="inputEmail3" className="col-sm-1 col-form-label">
           Email
         </label>
-        <div className="col-sm-3">
+        <div className="col-sm-5">
           <input
             type="email"
             className="form-control"
@@ -88,7 +88,7 @@ const SignUpPage = () => {
         <label htmlFor="inputPassword3" className="col-sm-1 col-form-label">
           Password
         </label>
-        <div className="col-sm-3">
+        <div className="col-sm-5">
           <input
             type="password"
             className="form-control"

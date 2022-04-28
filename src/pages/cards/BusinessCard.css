@@ -5,3 +5,11 @@
 .btns {
   margin-right: 5%;
 }
+
+.userImage {
+  height: 200px;
+}
+
+div .card-footer {
+  background-color: #b08968;
+}

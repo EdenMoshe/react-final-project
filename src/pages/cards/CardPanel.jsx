@@ -76,9 +76,9 @@ const CardPanel = () => {
     });
   };
 
-  const handleInfoCard = (id) => {
-    history.push(`/card/${id}`);
-  };
+  // const handleInfoCard = (id) => {
+  //   history.push(`/card/${id}`);
+  // };
 
   return (
     <Fragment>
@@ -94,6 +94,7 @@ const CardPanel = () => {
               desc={item.description}
               phone={item.phone}
               address={item.address}
+              image={item.image}
               userIdCard={item.userID}
               LoggedInUserData={userInfoRedux}
               onDeleteCard={handleDeleteCard}

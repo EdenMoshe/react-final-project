@@ -4,16 +4,20 @@ import { useDispatch, useSelector } from "react-redux";
 import { authActions } from "../../store/auth";
 
 const NavBarComponent = () => {
+  const userBiz = useSelector((state) => state.auth.userData.biz);
+
   const LoggedInRedux = useSelector((state) => state.auth.loggedIn);
   const dispatch = useDispatch();
+
   const logOut = () => {
     dispatch(authActions.logOut());
     localStorage.clear();
   };
+
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
-      <NavLink className="navbar-brand" to="/">
-        NavBar
+    <nav className="navbar navbar-expand-lg ">
+      <NavLink className="navbar-brand text-dark" to="/">
+        Calderon & co.
       </NavLink>
       <button
         className="navbar-toggler"
@@ -30,7 +34,7 @@ const NavBarComponent = () => {
         <ul className="navbar-nav">
           <li className="nav-item active">
             <NavLink
-              className="nav-link"
+              className="nav-link text-dark"
               aria-current="page"
               to="/home"
               activeClassName="activeLink"
@@ -38,9 +42,9 @@ const NavBarComponent = () => {
               Home <span className="sr-only"></span>
             </NavLink>
           </li>
-          <li className="nav-item active">
+          <li className="nav-item active ">
             <NavLink
-              className="nav-link"
+              className="nav-link text-dark"
               aria-current="page"
               to="/about"
               activeClassName="activeLink"
@@ -50,7 +54,7 @@ const NavBarComponent = () => {
           </li>
           <li className="nav-item">
             <NavLink
-              className="nav-link"
+              className="nav-link text-dark"
               aria-current="page"
               to="/signUp"
               activeClassName="activeLink"
@@ -60,7 +64,11 @@ const NavBarComponent = () => {
           </li>
           {!LoggedInRedux && (
             <li className="nav-item">
-              <NavLink className="nav-link" aria-current="page" to="/login">
+              <NavLink
+                className="nav-link text-dark"
+                aria-current="page"
+                to="/login"
+              >
                 Login
               </NavLink>
             </li>
@@ -68,7 +76,7 @@ const NavBarComponent = () => {
 
           <li className="nav-item">
             <NavLink
-              className="nav-link "
+              className="nav-link text-dark "
               aria-current="page"
               to="/cardPanel"
               activeClassName="activeLink"
@@ -76,26 +84,29 @@ const NavBarComponent = () => {
               Cards
             </NavLink>
           </li>
-          <li className="nav-item">
-            <NavLink
-              className="nav-link "
-              aria-current="page"
-              to="/createNewBizCard"
-              activeClassName="activeLink"
-            >
-              Business Card
-            </NavLink>
-          </li>
+          {userBiz && (
+            <li className="nav-item">
+              <NavLink
+                className="nav-link text-dark"
+                aria-current="page"
+                to="/createNewBizCard"
+                activeClassName="activeLink"
+              >
+                Business Card
+              </NavLink>
+            </li>
+          )}
         </ul>
       </div>
-
-      <button
-        type="button"
-        className="btn btn-secondary btn-logout"
-        onClick={logOut}
-      >
-        Logout
-      </button>
+      {LoggedInRedux && (
+        <button
+          type="button"
+          className="btn btn-warning btn-logout"
+          onClick={logOut}
+        >
+          Logout
+        </button>
+      )}
     </nav>
   );
 };

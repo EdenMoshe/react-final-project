@@ -1,5 +1,5 @@
-import { useState } from "react";
 import "./BusinessCard.css";
+import userIconMen from "../../assets/userIconMen.png";
 
 const BusinessCard = (props) => {
   const handleDeleteClick = () => {
@@ -13,7 +13,7 @@ const BusinessCard = (props) => {
   return (
     <div className="col">
       <div className="card h-100">
-        {/* <img src={logo} classNameName="card-img-top" alt="User Image" /> */}
+        <img src={userIconMen} className="card-img-top" alt="userImage" />
         <div className="card-body">
           <h5 className="card-title">{props.name}</h5>
           <p className="card-text">{props.desc}</p>

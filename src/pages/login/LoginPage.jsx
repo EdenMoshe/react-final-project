@@ -13,6 +13,7 @@ const LoginPage = () => {
   const location = useLocation();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+
   // const emailRef = useRef(null);
 
   //for redux actions
