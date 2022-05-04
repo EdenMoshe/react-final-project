@@ -26,3 +26,18 @@
   top: 200px;
   right: 100px;
 }
+
+@media only screen and (max-width: 600px) {
+  .homeBanner {
+    position: relative;
+  }
+  .card-img,
+  .card-img-top {
+    width: auto;
+    height: auto;
+  }
+  .mainHeder {
+    top: 50px;
+    right: 5px;
+  }
+}

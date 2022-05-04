@@ -40,14 +40,15 @@ const SignUpPage = () => {
       .post("/users/register", { name, email, password, biz })
       .then((res) => {
         console.log("res.data", res.data);
-        if (setBiz === true) {
-          history.push("/createNewBizCard");
-        }
-        history.push("/loginPage", { email, password });
+        history.push("/login", { email, password });
       })
       .catch((err) => {
         console.log("err", err);
       });
+
+    // if (biz === true) {
+    //   history.push("/createNewBizCard");
+    // }
   };
 
   return (

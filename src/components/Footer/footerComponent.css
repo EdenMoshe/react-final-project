@@ -9,3 +9,10 @@
   height: 70px;
   background-color: #ede0d4;
 }
+
+@media only screen and (max-width: 600px) {
+  .my_footer {
+    position: sticky;
+    margin-top: 430px;
+  }
+}

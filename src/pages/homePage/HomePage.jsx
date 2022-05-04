@@ -9,14 +9,19 @@ const HomePage = () => {
   return (
     <Fragment>
       <div className="homePageContainer">
-        <img
-          className="card-img-top ladyJustice"
-          src={LadyJustice}
-          alt="Card image cap"
-        />
-        <h1 className="mainHeder">Calderon & Co. lawyer office</h1>
-        <br />
-        <br />
+        <div className="homeBanner">
+          <img
+            className="card-img-top ladyJustice"
+            src={LadyJustice}
+            alt="Card image cap"
+          />
+          <h1 className="mainHeder">
+            Calderon & Co.
+            <br /> lawyer office
+          </h1>
+          <br />
+          <br />
+        </div>
 
         <h1>Meet our team</h1>
 

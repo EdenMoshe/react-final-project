@@ -15,15 +15,15 @@ const NavBarComponent = () => {
   };
 
   return (
-    <nav className="navbar navbar-expand-lg ">
+    <nav className="navbar navbar-expand-lg navbar-light navbar-fixed-top ">
       <NavLink className="navbar-brand text-dark" to="/">
         Calderon & co.
       </NavLink>
       <button
         className="navbar-toggler"
         type="button"
-        data-toggle="collapse"
-        data-target="#navbarNav"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
         aria-controls="navbarNav"
         aria-expanded="false"
         aria-label="Toggle navigation"
@@ -31,7 +31,7 @@ const NavBarComponent = () => {
         <span className="navbar-toggler-icon"></span>
       </button>
       <div className="collapse navbar-collapse" id="navbarNav">
-        <ul className="navbar-nav">
+        <ul className="navbar-nav ">
           <li className="nav-item active">
             <NavLink
               className="nav-link text-dark"
@@ -39,7 +39,7 @@ const NavBarComponent = () => {
               to="/home"
               activeClassName="activeLink"
             >
-              Home <span className="sr-only"></span>
+              Home <span className="sr-only" />
             </NavLink>
           </li>
           <li className="nav-item active ">
@@ -49,7 +49,7 @@ const NavBarComponent = () => {
               to="/about"
               activeClassName="activeLink"
             >
-              About <span className="sr-only"></span>
+              About <span className="sr-only" />
             </NavLink>
           </li>
           <li className="nav-item">

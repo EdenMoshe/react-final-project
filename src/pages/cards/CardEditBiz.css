@@ -1,9 +1,9 @@
 .popup-wrapper {
-  position: absolute;
+  position: fixed;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  background-color: lightyellow;
+  background-color: #ede0d4;
   border: solid black 1px;
   padding: 2rem;
 }
