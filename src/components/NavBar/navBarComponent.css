@@ -1,6 +1,6 @@
 .navbar {
-  position: fixed;
   width: 100%;
+  background-color: #ede0d4;
 }
 
 .navbar-brand,
@@ -11,4 +11,6 @@
 
 .btn-logout {
   float: right;
+  margin: 10px;
+  margin-bottom: 5px;
 }

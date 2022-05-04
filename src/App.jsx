@@ -9,7 +9,6 @@ import AboutUsPage from "./pages/about/AboutUsPage";
 import SignUpPage from "./pages/signUpPage/SignUpPage";
 import LoginPage from "./pages/login/LoginPage";
 import CardPanel from "./pages/cards/CardPanel";
-import CardInfoPage from "./pages/cards/CardInfoPage";
 import CreateNewBizCard from "./pages/cards/CreateNewBizCard";
 import FooterComponent from "./components/Footer/FooterComponent";
 import AuthGuardRoute from "./components/AuthGuardRoute";

@@ -1,0 +1,43 @@
+.attorneyCard {
+  height: 500px;
+  width: 260px;
+  margin: 0 auto;
+}
+.card-img-top {
+  height: 350px;
+  width: 250px;
+}
+
+.cardsContainer {
+  display: flex;
+}
+
+.card-body {
+  background-color: #b08968;
+  color: white;
+}
+
+.ladyJustice {
+  height: 500px;
+}
+
+.mainHeder {
+  position: absolute;
+  top: 200px;
+  right: 100px;
+}
+
+@media only screen and (max-width: 600px) {
+  .homeBanner {
+    position: relative;
+  }
+  .card-img,
+  .card-img-top {
+    width: auto;
+    height: auto;
+  }
+  .mainHeder {
+    top: 50px;
+    right: 5px;
+  }
+}

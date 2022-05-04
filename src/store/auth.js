@@ -4,6 +4,7 @@ const initialAuthState = {
   loggedIn: false,
   token: "",
   userData: {},
+  biz: false,
 };
 
 const authSlice = createSlice({
@@ -23,6 +24,10 @@ const authSlice = createSlice({
     updateUser(state, action) {
       // console.log("action", action);
       state.userData = action.payload;
+    },
+
+    userBiz(state) {
+      state.biz = false;
     },
   },
 });

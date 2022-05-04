@@ -1,7 +1,22 @@
-.formWrapper {
+.newBizWrap {
   margin: 0 auto;
   padding: 20px 20px 20px 20px;
-  width: 50%;
-  text-align: left;
-  border: solid black 1px;
+  width: 500px;
+  text-align: center;
+}
+
+div .newFormGroup {
+  width: 100%;
+}
+
+img .attorneyEndClient {
+  width: 1000px;
+  height: 500px;
+  align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .newBizWrap {
+    width: 100%;
+  }
 }

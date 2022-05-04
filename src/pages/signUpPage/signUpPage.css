@@ -1,3 +1,13 @@
 .form-row {
   padding: 5px;
 }
+
+.signUpForm {
+  margin: 0 auto;
+  width: 50%;
+  align-items: center;
+}
+
+.form-control {
+  width: 50%;
+}

@@ -40,23 +40,24 @@ const SignUpPage = () => {
       .post("/users/register", { name, email, password, biz })
       .then((res) => {
         console.log("res.data", res.data);
-        if (setBiz === true) {
-          history.push("/createNewBizCard");
-        }
-        history.push("/loginPage", { email, password });
+        history.push("/login", { email, password });
       })
       .catch((err) => {
         console.log("err", err);
       });
+
+    // if (biz === true) {
+    //   history.push("/createNewBizCard");
+    // }
   };
 
   return (
-    <form onSubmit={handleSignUp}>
+    <form className="signUpForm" onSubmit={handleSignUp}>
       <div className="form-group row form-row">
         <label htmlFor="inputEmail3" className="col-sm-1 col-form-label">
           Name:
         </label>
-        <div className="col-sm-3">
+        <div className="col-sm-5">
           <input
             type="text"
             className="form-control"
@@ -72,7 +73,7 @@ const SignUpPage = () => {
         <label htmlFor="inputEmail3" className="col-sm-1 col-form-label">
           Email
         </label>
-        <div className="col-sm-3">
+        <div className="col-sm-5">
           <input
             type="email"
             className="form-control"
@@ -88,7 +89,7 @@ const SignUpPage = () => {
         <label htmlFor="inputPassword3" className="col-sm-1 col-form-label">
           Password
         </label>
-        <div className="col-sm-3">
+        <div className="col-sm-5">
           <input
             type="password"
             className="form-control"
